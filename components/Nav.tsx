@@ -19,7 +19,7 @@ const Nav: React.FC = () => {
   const pathname = usePathname();
 
   return (
-    <nav className=" flex flex-col gap-8">
+    <nav className=" flex gap-8">
       {links.map((link, index) => (
         <Link key={index} href={link.path} className={`${pathname === link.path && "text-accent border-b-2 border-accent" } capitalize font-medium hover:text-accent transition-all`}>
           {link.name}

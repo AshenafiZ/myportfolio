@@ -29,6 +29,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <style>{`
+          :root {
+            --radius: 8px;
+            --ring: 2px solid black; /* Default ring */
+          }
+        `}</style>
+      </head>
       <body
         className={jetbrainsMono.variable}
       >

@@ -15,4 +15,24 @@
   .h3 {
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold
   }
+  .text-outline {
+    -webkit-text-stroke: 1px #ffffff;
+  }
+  .text-outline-hover {
+    -webkit-text-stroke: 1px #00ff99;
+  }
 }
+
+:root {
+  --radius: 8px;
+  --ring: 2px solid black;
+}
+
+* {
+  @apply border-border;
+}
+
+input, textarea, select, button {
+  @apply focus:outline-none focus:ring-accent focus:ring-1;
+}
+
