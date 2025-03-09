@@ -1,5 +1,5 @@
 'use client';
-import { FaHtml5, FaCss3, FaJs, FaFigma, FaReact, FaNodeJs } from 'react-icons/fa';
+import { FaHtml5, FaCss3, FaJs, FaFigma, FaReact, FaNodeJs, FaGithub,  FaGit, FaPython, FaJava } from 'react-icons/fa';
 import { SiTailwindcss, SiNextdotjs } from 'react-icons/si';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
@@ -19,12 +19,12 @@ const about = {
       fieldValue: '+251 921273127',
     },
     {
-      fieldName: 'Email',
-      fieldValue: 'ashenafizewdie919@gmail.com',
-    },
-    {
       fieldName: 'Freelance',
       fieldValue: 'Available',
+    },
+    {
+      fieldName: 'Email',
+      fieldValue: 'ashenafizewdie919@gmail.com',
     },
     {
       fieldName: 'Languages',
@@ -43,45 +43,16 @@ const experience = {
       duration: "2024 - 2025",
     },
     {
-      company: "Ministry of Innovation and Technology",
-      position: 'Full Stack Developer Intern',
+      company: "Commercial Bank Of Ethiopia",
+      position: 'Hardware and Software Maintainance Intern',
       duration: "2024 - 2025",
     },
     {
-      company: "Ministry of Innovation and Technology",
-      position: 'Full Stack Developer Intern',
-      duration: "2024 - 2025",
+      company: "Addis Ababa University",
+      position: 'Full Stack Developer ',
+      duration: "2022 - present",
     },
-    {
-      company: "Ministry of Innovation and Technology",
-      position: 'Full Stack Developer Intern',
-      duration: "2024 - 2025",
-    },
-    {
-      company: "Ministry of Innovation and Technology",
-      position: 'Full Stack Developer Intern',
-      duration: "2024 - 2025",
-    },
-    {
-      company: "Ministry of Innovation and Technology",
-      position: 'Full Stack Developer Intern',
-      duration: "2024 - 2025",
-    },
-    {
-      company: "Ministry of Innovation and Technology",
-      position: 'Full Stack Developer Intern',
-      duration: "2024 - 2025",
-    },
-    {
-      company: "Ministry of Innovation and Technology",
-      position: 'Full Stack Developer Intern',
-      duration: "2024 - 2025",
-    },
-    {
-      company: "Ministry of Innovation and Technology",
-      position: 'Full Stack Developer Intern',
-      duration: "2024 - 2025",
-    },
+    
   ]
 }
 const education = {
@@ -91,16 +62,48 @@ const education = {
   items: [
     {
       institution: 'Addis Ababa University',
-      position: 'bottom',
+      position: 'Electrical and Computer Engineering',
+      dgree: 'Bacheler of Science',
+    },
+    {
+      institution: 'Difference Online Learning',
+      position: 'Full stack Developemt',
       dgree: 'certified training',
-    }
+    },
+    {
+      institution: 'Ethio-Japan Secondary School',
+      position: 'High school',
+      dgree: '',
+    },
+    {
+      institution: 'Yegagina Elementary School',
+      position: 'Elementary school',
+      dgree: '',
+    },
   ]
+  
 }
 
 const skills = {
   title: 'My skills',
   description: '',
   skillList: [
+    {
+      icon: <FaPython />,
+      name: 'python',
+    },
+    {
+      icon: <FaJava />,
+      name: 'java',
+    },
+    {
+      icon: <FaGit />,
+      name: 'git',
+    },
+    {
+      icon: <FaGithub />,
+      name: 'github',
+    },
     {
       icon: <FaHtml5 />,
       name: 'html 5',
@@ -146,12 +149,12 @@ const Resume = () => {
       }}
       className='min-h-[80vh] flex items-center justify-center py-12 xl:py-0'
     >
-      <div className='container mx-auto'>
+      <div className='container mx-auto mt-2 mb-8'>
         <Tabs 
           defaultValue='skills' 
           className='flex flex-col xl:flex-row gap-[60px]'
         >
-          <TabsList className='flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6'>
+          <TabsList className='flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6 mt-8'>
             <TabsTrigger value='skills'>Skills</TabsTrigger>
             <TabsTrigger value='education'>Education</TabsTrigger>
             <TabsTrigger value='experience'>Experience</TabsTrigger>

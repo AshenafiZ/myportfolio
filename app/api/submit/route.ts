@@ -4,7 +4,7 @@ export async function POST(req: Request) {
   try {
     const formData = await req.json(); 
 
-    const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbyH4N5IPop1I1I6GqoNdQO0OIlJ_6tfRoQHFXOzuKE_N6SPsV6KR-LjYGp36yMZ4Eg/exec"; // Replace with your URL
+    const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbzL80VpcKItReHDSYh9sC4efxbbFeDWNVIugQtEC19LM5NAUeoEdxfgH3KPoujebjg/exec"; 
 
     const response = await fetch(GOOGLE_SHEET_URL, {
       method: "POST",

@@ -15,13 +15,13 @@ const Header = () => {
             The Winner<span className='text-accent'>.</span>
           </h1>
         </Link>
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden sm:flex items-center gap-8">
           <Nav />
           <Link href='/contact'>
-            <Button>Hire me</Button>
+            <Button className='hidden md:flex'>Hire me</Button>
           </Link>
         </div>
-        <div className="md:hidden">
+        <div className="sm:hidden">
           <MobileNav />
         </div>
       </div>

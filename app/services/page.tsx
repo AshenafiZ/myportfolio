@@ -1,64 +1,63 @@
-'use client';
-import { BsArrowDownRight } from 'react-icons/bs';
-import Link from 'next/link';
-import { motion } from 'framer-motion'
+"use client";
+
+import { motion } from "framer-motion";
+import { FaCode, FaMobileAlt, FaPalette, FaMicrochip } from "react-icons/fa";
 
 const services = [
   {
-    num: '01',
-    title: 'Web Developement',
-    description: '',
-    href: ''
+    id: "web-development",
+    name: "Web Development",
+    icon: <FaCode className="text-blue-500 text-5xl" />,
+    description: "We build fast, modern, and scalable websites using the latest technologies like React, Next.js, and Node.js."
   },
   {
-    num: '02',
-    title: 'Web Design',
-    description: '',
-    href: ''
+    id: "web-design",
+    name: "Web Design",
+    icon: <FaPalette className="text-yellow-500 text-5xl" />,
+    description: "Create stunning UI/UX designs with a focus on user experience, responsiveness, and modern aesthetics."
   },
   {
-    num: '03',
-    title: 'Mobile Application Development',
-    description: '',
-    href: ''
+    id: "mobile-app",
+    name: "Mobile App Development",
+    icon: <FaMobileAlt className="text-green-500 text-5xl" />,
+    description: "Develop cross-platform and native mobile apps for Android and iOS with Flutter, React Native, and Swift."
   },
   {
-    num: '04',
-    title: 'Arduino',
-    description: '',
-    href: ''
-  },
-    
-]
-const Services = () => {
-  return (
-    <section className='min-h-[80vh] flex flex-col justify-center py-12 xl:py-0'>
-      <div className="container mx-auto">
-        <motion.div
-          initial= {{opacity: 0}}
-          animate= {{
-            opacity: 1, 
-            transition: {delay: 2.4, duration: 0.4, ease: 'easeIn' }
-        }}
-        className='grid grid-cols-1 md:grid-cols-2 gap-[60px]'
-        >
-          {services.map((service, index) => (
-            <div key={index} className='flex-1 flex flex-col justify-center gap-6 group'>
-              <div className='w-full flex justify-between items-center '>
-                <div className='text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500'>{service.num}</div>
-                <Link href={service.href} className='w-[65px] h-[65px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45'>
-                  <BsArrowDownRight className='text-primary text-3xl '/>
-                </Link>
-              </div>
-              <h2 className='text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500'>{service.title}</h2>
-              <p className='text-white/60'>{service.description}</p>
-              <div className='border-b border-white/20 w-full'></div>
-            </div>
-          ))}
-        </motion.div>
-      </div>
-    </section>
-  )
-}
+    id: "hardware-design",
+    name: "Hardware Design",
+    icon: <FaMicrochip className="text-red-500 text-5xl" />,
+    description: "We design and prototype electronic circuits, IoT devices, and embedded systems for smart applications."
+  }
+];
 
-export default Services
+const ServicesPage = () => {
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center p-6">
+      
+      <motion.h1 
+        initial={{ opacity: 0, y: -50 }} 
+        animate={{ opacity: 1, y: 0 }} 
+        transition={{ duration: 0.5 }}
+        className="text-3xl font-bold mb-6"
+      >
+        Our Services
+      </motion.h1>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+        {services.map((service) => (
+          <motion.div
+            key={service.id}
+            whileHover={{ scale: 1.05 }}
+            className="p-6 flex flex-col items-center text-center bg-[#27272c] shadow-lg rounded-lg border border-gray-200 transition-all duration-300"
+          >
+            <div>{service.icon}</div>
+            <h2 className="text-xl font-semibold mt-3">{service.name}</h2>
+            <p className="text-white/60 mt-2">{service.description}</p>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default ServicesPage;
