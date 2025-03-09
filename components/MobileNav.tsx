@@ -35,8 +35,8 @@ const MobileNav = () => {
             <CiMenuFries className='text-[32px] text-accent' />
         </SheetTrigger>
         <SheetContent className='flex flex-col'>
-            <div className='mt-32 mb-40 text-center text-2xl'>logo</div>
-            <nav>
+            <div className='text-center text-2xl'>logo</div>
+            <nav className='flex flex-col justify-center items-center gap-8'>
                 {links.map((link, index) => (
                     <Link href={link.path} key={index} className={`${link.path === pathname && 'text-accent border-b-2 border-accent'} text-xl capitalize hover:text-accent transition-all`}>
                         {link.name}
