@@ -1,51 +1,56 @@
-import React from 'react';
-import { Sheet, SheetContent, SheetTrigger} from '@/components/ui/sheet';
-import { usePathname } from 'next/navigation';
-import Link from 'next/link';
-import { CiMenuFries } from 'react-icons/ci';
+"use client";
 
-const links = [
-    {
-        name: 'home',
-        path: '/',
-    },
-    {
-        name: 'services',
-        path: '/services',
-    },
-    {
-        name: 'resume',
-        path: '/resume',
-    },
-    {
-        name: 'work',
-        path: '/work',
-    },
-    {
-        name: 'contact',
-        path: '/contact',
-    },
+import { useState } from "react";
+import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
+import { Menu } from "lucide-react"; 
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+interface NavLink {
+    name: string;
+    path: string;
+  }  
+const links: NavLink[] = [
+    { name: 'home', path: '/', },
+    { name: 'services', path: '/services', },
+    { name: 'resume', path: '/resume', },
+    { name: 'work', path: '/work', },
+    { name: 'contact', path: '/contact', },
 ]
-const MobileNav = () => {
+const MobileNav: React.FC = () => {
     const pathname = usePathname();
+    const [isOpen, setIsOpen] = useState(false);
 
-  return (
-    <Sheet>
-        <SheetTrigger className='flex justify-center items-center'>
-            <CiMenuFries className='text-[32px] text-accent' />
-        </SheetTrigger>
-        <SheetContent className='flex flex-col'>
-            <div className='text-center text-2xl'>logo</div>
-            <nav className='flex flex-col justify-center items-center gap-8'>
-                {links.map((link, index) => (
-                    <Link href={link.path} key={index} className={`${link.path === pathname && 'text-accent border-b-2 border-accent'} text-xl capitalize hover:text-accent transition-all`}>
-                        {link.name}
-                    </Link>
-                ))}
+    return (
+        <Sheet open={isOpen} onOpenChange={setIsOpen}>
+          <SheetTrigger className="flex justify-center items-center">
+            <Menu className="text-[32px] text-accent" /> {/* ✅ Using Lucide's Menu Icon */}
+          </SheetTrigger>
+          <SheetContent className="flex flex-col gap-6">
+            <div className="text-center text-2xl">Ashenafi</div>
+            <nav className="flex flex-col justify-center items-center gap-8">
+              {links.map((link, index) => (
+                <Link
+                  href={link.path}
+                  key={index}
+                  className={`${
+                    link.path === pathname && "text-accent border-b-2 border-accent"
+                  } text-xl capitalize hover:text-accent transition-all`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              ))}
             </nav>
-        </SheetContent>
-    </Sheet>
-  )
-}
+          </SheetContent>
+        </Sheet>
+      );
+    }
+    
 
 export default MobileNav
+
+
+
+
+
+ 
