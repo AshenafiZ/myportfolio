@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
+import { Sheet, SheetTrigger, SheetContent, SheetTitle } from "@/components/ui/sheet";
 import { Menu } from "lucide-react"; 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -26,6 +26,7 @@ const MobileNav: React.FC = () => {
             <Menu className="text-[32px] text-accent" /> 
           </SheetTrigger>
           <SheetContent className="flex flex-col gap-6">
+            <SheetTitle></SheetTitle>
             <div className="text-center text-2xl">Ashenafi</div>
             <nav className="flex flex-col justify-center items-left gap-8">
               {links.map((link, index) => (

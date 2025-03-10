@@ -1,10 +1,11 @@
+
 import type { Metadata } from "next";
 import { JetBrains_Mono, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import PageTransition from "@/components/PageTransition";
-import StairTransition from "@/components/StairTransition";
+import Header from "@/components/Header"; 
+import Footer from "@/components/Footer"; 
+import PageTransition from "@/components/PageTransition"; 
+import StairTransition from "@/components/StairTransition"; 
 
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", "800"], variable: '--font-jetbrainsMono'});
 
@@ -22,7 +23,6 @@ export const metadata: Metadata = {
   title: "Ashenafi",
   description: "Ashenafi's Portfolio Website ",
 };
-// ${geistSans.variable} ${geistMono.variable} antialiased
 export default function RootLayout({
   children,
 }: Readonly<{

@@ -12,54 +12,45 @@ import WorkSlideBtns from '@/components/WorkSlideBtns';
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "project 1",
+    category: "fullstack",
+    title: "Online Learning Platform",
     description: "",
-    stack: [{name: "Html 5"}, {name: "Css 3"}, {name: "Javascript"}],
-    image: "/assets/work",
+    stack: [{name: "React.js"}, {name: "Css 3"}, {name: "MySQL"}, {name: "Express"}],
+    image: "/work/learning.png",
     live: "",
-    github: "",
+    github: "https://github.com/AshenafiZ/Online-Learning-Platform",
   },
   {
     num: "02",
-    category: "frontend",
-    title: "project 1",
+    category: "Full stack",
+    title: "Planning and Monitoring ",
     description: "",
-    stack: [{name: "Html 5"}, {name: "Css 3"}, {name: "Javascript"}],
-    image: "/assets/work",
+    stack: [{name: "React.js"}, {name: "TailWindcss"}, {name: "Express.js"}, {name: "MySQL"}],
+    image: "/work/mint.png",
     live: "",
-    github: "",
+    github: "https://github.com/AshenafiZ/MiNT_Project",
   },
   {
     num: "03",
-    category: "frontend",
-    title: "project 1",
+    category: "Full Stack",
+    title: "Smart Soil Monitoring",
     description: "",
-    stack: [{name: "Html 5"}, {name: "Css 3"}, {name: "Javascript"}],
-    image: "/assets/work",
+    stack: [{name: "Next.js"}, {name: "Tailwindcss"}, {name: "Firebase"}],
+    image: "/work/soil.webp",
     live: "",
-    github: "",
+    github: "https://github.com/AshenafiZ/Smart-Soil-Monitoring",
   },
   {
-    num: "01",
-    category: "frontend",
-    title: "project 1",
+    num: "04",
+    category: "fullstack",
+    title: "Hospital Management System",
     description: "",
-    stack: [{name: "Html 5"}, {name: "Css 3"}, {name: "Javascript"}],
-    image: "/assets/work",
+    stack: [{name: "React.js"}, {name: "Css 3"}, {name: "Mongodb"}, {name: "Express"}],
+    image: "/work/hospital.png",
     live: "",
-    github: "",
+    github: "https://github.com/AshenafiZ/Hospital-Management-System",
   },
-  {
-    num: "01",
-    category: "frontend",
-    title: "project 1",
-    description: "",
-    stack: [{name: "Html 5"}, {name: "Css 3"}, {name: "Javascript"}],
-    image: "/assets/work",
-    live: "",
-    github: "",
-  },
+  
   
 ]
 
@@ -84,6 +75,7 @@ const Work = () => {
               <h2 className='text-[42-x] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize'>
                 {project.category} project
               </h2>
+              <p className='text-white'>{project.title}</p>
               <p className='text-white/60'>{project.description}</p>
               <ul className='flex gap-4 '>
                 {project.stack.map((item, index) =>{
@@ -95,7 +87,7 @@ const Work = () => {
               </ul>
               <div className='border border-white/20 '></div>
               <div className='flex items-center gap-4'>
-                <Link href={project.live}>
+                <Link href={project.live} target="_blank" rel="noopener noreferrer" >
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
@@ -107,7 +99,7 @@ const Work = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
-                <Link href={project.github}>
+                <Link href={project.github} target="_blank" rel="noopener noreferrer" >
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
@@ -126,15 +118,15 @@ const Work = () => {
             <Swiper 
               spaceBetween={30} 
               slidesPerView={1} 
-              className='xl:h-[520px] mb-12'
+              className='xl:h-[520px] mb-2'
               onSlideChange={handleSlideChange}
             >
               {projects.map((project, index) =>{
                 return <SwiperSlide key={index}>
-                  <div className='h-[460px] relative group flex justify-center items-center bg-pink-50/20'>
+                  <div className='h-[360px] mt-4 relative group flex justify-center items-center bg-pink-50/20'>
                     <div className='absolute top-0 bottom-0 w-full h-full bg-black/10 z-10'></div>
                     <div className='relative w-full h-full'>
-                      <Image src={project.image} fill alt="" className='object-cover' />
+                      <Image src={project.image} fill alt="" className='' />
                     </div>
                   </div>
                 </SwiperSlide>
