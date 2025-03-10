@@ -20,6 +20,6 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ message: "Success" }, { status: 200 });
   } catch (error) {
-    return NextResponse.json({ message: "Error submitting data" }, { status: 500 });
+    return NextResponse.json({ message: "Error submitting data",error }, { status: 500 });
   }
 }

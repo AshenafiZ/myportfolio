@@ -13,7 +13,7 @@ export default function Home() {
           <div className="text-center md:text-left order-2 md:order-none">
             <span className="text-xl">Computer Engineering Student</span>
             <h1 className="h1">
-              Hello I'm <br /> <span className="text-accent">Ashenafi Zewdie</span>
+              Hello I&apos;m <br /> <span className="text-accent">Ashenafi Zewdie</span>
             </h1>
             <p className="max-w-[500px] mb-4 text-white/80">I am proficient in various programming languages and technologies. </p>
             <div className="flex flex-col xl:flex-row gap-8 items-center">

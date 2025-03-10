@@ -1,12 +1,11 @@
 import Link from "next/link";
-import { FaTelegram, FaLinkedin, FaGithub, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaTelegram, FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si"; 
 
 const socials = [
     { icon: <FaTelegram />, path: "https://t.me/az122119" },
     { icon: <FaGithub />, path: "https://github.com/AshenafiZ" },
     { icon: <FaLinkedin />, path: "https://www.linkedin.com/in/ashenafi-zewdie-2823952ab/" },
-    // { icon: <FaTwitter />, path: "https://twitter.com/your_username" }, 
     { icon: <FaWhatsapp />, path: "https://wa.me/+251921273127" }, 
     { icon: <SiUpwork />, path: "https://www.upwork.com/freelancers/~01b97601eac9287bb1 " } 
 ];
