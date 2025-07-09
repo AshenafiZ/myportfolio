@@ -1,6 +1,6 @@
 'use client';
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaGithub,  FaGit, FaPython, FaJava } from 'react-icons/fa';
-import { SiTailwindcss, SiNextdotjs, SiExpo } from 'react-icons/si';
+import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaGithub, FaGit, FaPython, FaJava } from 'react-icons/fa';
+import { SiTailwindcss, SiNextdotjs, SiFlutter } from 'react-icons/si';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { ScrollArea } from '@/components/ui/scroll-area';
@@ -24,7 +24,7 @@ const about = {
     },
     {
       fieldName: 'Email',
-      fieldValue: 'ashenafizewdie919@gmail.com',
+      fieldValue: 'ashenafizewdie19@gmail.com',
     },
     {
       fieldName: 'Languages',
@@ -133,8 +133,8 @@ const skills = {
       name: 'node.js',
     },
     {
-      icon: <SiExpo />,
-      name: 'expo',
+      icon: <SiFlutter />,
+      name: 'Flutter',
     },
     
   ]

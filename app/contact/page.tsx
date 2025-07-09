@@ -12,12 +12,12 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    description: "+251 921273127",
+    description: <a href="callto:+251921273127">+251 921273127</a>,
   },
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "ashenafizewdie919@gmail.com",
+    description: <a href="mailto:ashenafizewdie19@gmail.com">ashenafizewdie19@gmail.com</a>,
   },
   {
     icon: <FaMapMarkerAlt />,
