@@ -21,7 +21,9 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ashenafi-zewdie.vercel.app"),
-
+  verification: {
+    google: "1HeLFbErqTKazh0aGvewwDKF1J0Trz6_wKEs9qVTZRI",
+  },
   title: {
     default: "Ashenafi Zewdie | Full Stack Developer & Computer Engineer",
     template: "%s | Ashenafi Zewdie",
