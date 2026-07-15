@@ -7,15 +7,6 @@
     @apply font-primary bg-primary text-white
   }
   .h1 {
-<<<<<<< HEAD
-    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold
-  }
-  .h2 {
-    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold
-  }
-  .h3 {
-    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold
-=======
     @apply font-display text-[44px] xl:text-[76px] leading-[1.05] font-semibold tracking-tight
   }
   .h2 {
@@ -23,26 +14,17 @@
   }
   .h3 {
     @apply font-display text-[19px] xl:text-[23px] leading-[1.2] font-semibold
->>>>>>> redesign-and-fixes
   }
   .text-outline {
     -webkit-text-stroke: 1px #ffffff;
   }
   .text-outline-hover {
-<<<<<<< HEAD
-    -webkit-text-stroke: 1px #00ff99;
-=======
     -webkit-text-stroke: 1px #E2984B;
->>>>>>> redesign-and-fixes
   }
 }
 
 :root {
-<<<<<<< HEAD
-  --radius: 8px;
-=======
   --radius: 6px;
->>>>>>> redesign-and-fixes
   --ring: 2px solid black;
 }
 
@@ -54,8 +36,6 @@ input, textarea, select, button {
   @apply focus:outline-none focus:ring-accent focus:ring-1;
 }
 
-<<<<<<< HEAD
-=======
 /* ---------------------------------------------------------
    Signature motifs: circuit-board texture, traces, pin marks
 --------------------------------------------------------- */
@@ -121,4 +101,3 @@ input, textarea, select, button {
     transition-duration: 0.001ms !important;
   }
 }
->>>>>>> redesign-and-fixes

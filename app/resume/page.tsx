@@ -1,9 +1,6 @@
 'use client';
-<<<<<<< HEAD
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaGithub, FaGit, FaPython, FaJava } from 'react-icons/fa';
-=======
+
 import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaGithub, FaGit, FaPython, FaJava, FaNetworkWired, FaServer } from 'react-icons/fa';
->>>>>>> redesign-and-fixes
 import { SiTailwindcss, SiNextdotjs, SiFlutter } from 'react-icons/si';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
@@ -42,21 +39,6 @@ const experience = {
   description: '',
   items: [
     {
-<<<<<<< HEAD
-      company: "Ministry of Innovation and Technology",
-      position: 'Full Stack Developer Intern',
-      duration: "2024 - 2025",
-    },
-    {
-      company: "Commercial Bank Of Ethiopia",
-      position: 'Hardware and Software Maintainance Intern',
-      duration: "2024 - 2025",
-    },
-    {
-      company: "Addis Ababa University",
-      position: 'Full Stack Developer ',
-      duration: "2022 - present",
-=======
       company: "Dashen Bank",
       position: 'Data Center Engineer',
       duration: "May 2026 - Present",
@@ -92,7 +74,6 @@ const experience = {
       position: 'Full Stack Developer',
       duration: "2022 - present",
       description: "",
->>>>>>> redesign-and-fixes
     },
     
   ]
@@ -143,8 +124,6 @@ const skills = {
       name: 'git',
     },
     {
-<<<<<<< HEAD
-=======
       icon: <FaNetworkWired />,
       name: 'Routing & switching',
     },
@@ -153,7 +132,6 @@ const skills = {
       name: 'Data center ops',
     },
     {
->>>>>>> redesign-and-fixes
       icon: <FaGithub />,
       name: 'github',
     },
@@ -227,11 +205,7 @@ const Resume = () => {
                     return <li key={index} className=''>
                       <TooltipProvider delayDuration={100}>
                         <Tooltip>
-<<<<<<< HEAD
-                          <TooltipTrigger className='w-full h-[150px] bg-[#232329] rounded-xl flex items-center justify-center group'>
-=======
                           <TooltipTrigger className='w-full h-[150px] bg-surface rounded-xl flex items-center justify-center group'>
->>>>>>> redesign-and-fixes
                             <div className='text-6xl group-hover:text-accent transition-all duration-300'>{skill.icon}</div>
                           </TooltipTrigger>
                           <TooltipContent>
@@ -253,11 +227,7 @@ const Resume = () => {
                 <ScrollArea className='h-[400px] '>
                   <ul className='grid grid-cols-1 xl:grid-cols-2 gap-[30px] '>
                     {education.items.map((item, index) => { 
-<<<<<<< HEAD
-                      return <li key={index} className='bg-[#232329] h-36 py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1'>
-=======
                       return <li key={index} className='bg-surface h-36 py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1'>
->>>>>>> redesign-and-fixes
                         <span className='text-accent '>{item.dgree}</span>
                         <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>{item.position}</h3>
                         <div className='flex items-center gap-3'>
@@ -277,14 +247,6 @@ const Resume = () => {
                   <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>
                     {experience.description}
                   </p>
-<<<<<<< HEAD
-                  <ScrollArea className='h-[400px] '>
-                    <ul className='grid grid-cols-1 xl:grid-cols-2 gap-[30px] '>
-                      {experience.items.map((item, index) => { 
-                        return <li key={index} className='bg-[#232329] h-36 py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1'>
-                          <span className='text-accent '>{item.duration}</span>
-                          <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>{item.position}</h3>
-=======
                   <ScrollArea className='h-[420px] '>
                     <ul className='grid grid-cols-1 xl:grid-cols-2 gap-[30px] '>
                       {experience.items.map((item, index) => { 
@@ -296,17 +258,13 @@ const Resume = () => {
                             )}
                           </div>
                           <h3 className='text-xl max-w-[280px] text-center lg:text-left'>{item.position}</h3>
->>>>>>> redesign-and-fixes
                           <div className='flex items-center gap-3'>
                             <span className='w-[6px] h-[6px] rounded-full bg-accent'></span>
                             <p className='text-white/60 '>{item.company}</p>
                           </div>
-<<<<<<< HEAD
-=======
                           {item.description && (
                             <p className='text-white/50 text-sm text-center lg:text-left leading-snug max-w-[300px]'>{item.description}</p>
                           )}
->>>>>>> redesign-and-fixes
                         </li>
                       })}
                     </ul>

@@ -1,9 +1,6 @@
-<<<<<<< HEAD
-=======
 'use client';
 import { motion } from 'framer-motion';
 
->>>>>>> redesign-and-fixes
 const Stats = () => {
     const stats = [
         {
@@ -12,29 +9,6 @@ const Stats = () => {
         },
         {
             num: 8,
-<<<<<<< HEAD
-            text: 'Technology Mastered',
-        },
-        {
-            num: 14,
-            text: 'Project Completed',
-        },
-        {
-            num: 300,
-            text: 'Code Commits',
-        },
-        
-    ]
-  return (
-    <section className="pt-4 pb-6 xl:pb-4">
-        <div className="container mx-auto">
-            <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none">
-                {stats.map((item, index) =>{
-                    return <div key={index} className="flex-1 flex gap-4 items-center justify-center xl:justify-start ">
-                        <div key={index} className="text-4xl xl:text-6xl font-extrabold">{item.num}</div>
-                        <p className={`${item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"} leading-snug text-white/80`}>{item.text}</p>
-                    </div>
-=======
             text: 'Technologies mastered',
         },
         {
@@ -62,7 +36,6 @@ const Stats = () => {
                         <div className="font-display text-4xl xl:text-5xl font-bold text-white">{item.num}<span className="text-accent">+</span></div>
                         <p className="text-white/60 text-sm font-primary max-w-[140px] text-center xl:text-left leading-snug">{item.text}</p>
                     </motion.div>
->>>>>>> redesign-and-fixes
                 })}
             </div>
         </div>
@@ -70,8 +43,5 @@ const Stats = () => {
   )
 }
 
-<<<<<<< HEAD
+
 export default Stats
-=======
-export default Stats
->>>>>>> redesign-and-fixes

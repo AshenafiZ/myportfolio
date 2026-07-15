@@ -1,10 +1,6 @@
 
 import type { Metadata } from "next";
-<<<<<<< HEAD
-import { JetBrains_Mono } from "next/font/google";
-=======
 import { JetBrains_Mono, Space_Grotesk } from "next/font/google";
->>>>>>> redesign-and-fixes
 import "./globals.css";
 import Header from "@/components/Header"; 
 import Footer from "@/components/Footer"; 
@@ -12,18 +8,11 @@ import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition"; 
 
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", "800"], variable: '--font-jetbrainsMono'});
-<<<<<<< HEAD
-
-export const metadata: Metadata = {
-  title: "Ashenafi Zewdie",
-  description: "Ashenafi's Portfolio Website ",
-=======
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"], variable: '--font-spaceGrotesk'});
 
 export const metadata: Metadata = {
   title: "Ashenafi Zewdie — Computer Engineer",
   description: "Ashenafi Zewdie — Full-stack developer & hardware/embedded systems engineer. Web, mobile, and IoT builds from Addis Ababa, Ethiopia.",
->>>>>>> redesign-and-fixes
 };
 export default function RootLayout({
   children,
@@ -42,11 +31,7 @@ export default function RootLayout({
         `}</style>
       </head>
       <body
-<<<<<<< HEAD
-        className={jetbrainsMono.variable}
-=======
         className={`${jetbrainsMono.variable} ${spaceGrotesk.variable}`}
->>>>>>> redesign-and-fixes
       >
         <Header />
         <StairTransition />

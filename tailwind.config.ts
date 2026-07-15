@@ -20,10 +20,7 @@ export default {
 	},
 	fontFamily: {
 		primary: "var(--font-jetbrainsMono)",
-<<<<<<< HEAD
-=======
 		display: "var(--font-spaceGrotesk)",
->>>>>>> redesign-and-fixes
 	},	
   	extend: {
   		colors: {
@@ -38,12 +35,7 @@ export default {
   				foreground: 'hsl(var(--popover-foreground))'
   			},
   			primary: {
-<<<<<<< HEAD
-				DEFAULT: '#1c1c22',
-  				// DEFAULT: 'hsl(var(--primary))',
-  				// foreground: 'hsl(var(--primary-foreground))'
-  			},
-=======
+
 				DEFAULT: '#0E1512',
   				// DEFAULT: 'hsl(var(--primary))',
   				// foreground: 'hsl(var(--primary-foreground))'
@@ -52,7 +44,6 @@ export default {
 				DEFAULT: '#161F1A',
 				raised: '#1C2620',
 			},
->>>>>>> redesign-and-fixes
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',
   				foreground: 'hsl(var(--secondary-foreground))'
@@ -62,13 +53,6 @@ export default {
   				foreground: 'hsl(var(--muted-foreground))'
   			},
   			accent: {
-<<<<<<< HEAD
-				DEFAULT: '#00ff99',
-				hover: '#00e187',
-  				// DEFAULT: 'hsl(var(--accent))',
-  				// foreground: 'hsl(var(--accent-foreground))'
-  			},
-=======
 				DEFAULT: '#E2984B',
 				hover: '#F0AC66',
   				// DEFAULT: 'hsl(var(--accent))',
@@ -78,7 +62,6 @@ export default {
 				DEFAULT: '#5FD3C4',
 				dim: '#3E7A70',
 			},
->>>>>>> redesign-and-fixes
   			destructive: {
   				DEFAULT: 'hsl(var(--destructive))',
   				foreground: 'hsl(var(--destructive-foreground))'

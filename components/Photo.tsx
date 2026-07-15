@@ -10,33 +10,6 @@ const Photo: React.FC = () => {
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
-<<<<<<< HEAD
-          transition: { delay: 2, duration: 0.4, ease: 'easeIn' },
-        }}
-        className="relative w-[289px] h-[289px] md:w-[398px] md:h-[398px] flex justify-center items-center"
-      >
-        <motion.div
-          initial={{ x: "100%", opacity: 0.3 }} 
-          animate={{
-            x: 0, 
-            opacity: 1,
-            rotate: [0, 360], 
-            transition: {
-              x: { type: "spring", stiffness: 80, damping: 15, duration: 1 }, 
-              opacity: { delay: 0.2, duration: 0.5 }, 
-              rotate: { delay: 1, duration: 2, ease: "easeInOut" }, 
-            },
-          }}
-          className="w-full h-full mix-blend-lighten relative"
-        >
-          <Image
-            src="/photo3.jpg"
-            alt="Profile Photo"
-            priority
-            quality={100}
-            fill
-            className="object-contain rounded-full"
-=======
           transition: { delay: 0.5, duration: 0.5, ease: 'easeIn' },
         }}
         className="component-frame relative w-[260px] h-[260px] md:w-[360px] md:h-[360px] flex justify-center items-center"
@@ -61,23 +34,15 @@ const Photo: React.FC = () => {
             quality={100}
             fill
             className="object-cover"
->>>>>>> redesign-and-fixes
           />
         </motion.div>
 
         <motion.svg
-<<<<<<< HEAD
-          className="absolute w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]"
-=======
           className="absolute w-[110%] h-[110%] pointer-events-none"
->>>>>>> redesign-and-fixes
           fill="transparent"
           viewBox="0 0 506 506"
           xmlns="http://www.w3.org/2000/svg"
         >
-<<<<<<< HEAD
-          
-=======
           <motion.circle
             cx="253"
             cy="253"
@@ -89,7 +54,6 @@ const Photo: React.FC = () => {
             initial={{ pathLength: 0 }}
             animate={{ pathLength: 1, transition: { delay: 0.4, duration: 2, ease: 'easeInOut' } }}
           />
->>>>>>> redesign-and-fixes
         </motion.svg>
       </motion.div>
     </div>
